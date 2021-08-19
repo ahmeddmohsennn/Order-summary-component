@@ -1,0 +1,123 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Red Hat Display", sans-serif;
+}
+:root {
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+}
+
+/* DESIGN */
+.container {
+  height: 100vh;
+  background-image: url(../images/pattern-background-mobile.svg);
+  background-size: cover;
+  background-color: var(--Pale-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  background-color: white;
+  border-radius: 20px;
+  text-align: center;
+  width: 87%;
+}
+@media (min-width: 768px) {
+  .card {
+    width: 23%;
+  }
+}
+.card > img {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+.info {
+  padding: 20px 0;
+}
+.info h2 {
+  color: var(--Dark-blue);
+  font-weight: 900;
+}
+.info p {
+  color: var(--Desaturated-blue);
+  width: 82%;
+  margin: 20px auto 0;
+  line-height: 1.7;
+}
+.plan {
+  background-color: var(--Very-pale-blue);
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 10px;
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.plan img {
+  height: 48px;
+  width: 48px;
+}
+.plan .info {
+  text-align: start;
+}
+.plan .info h3 {
+  color: var(--Dark-blue);
+  font-weight: 900;
+  font-size: 15px;
+  margin-bottom: 7px;
+}
+.plan .info span {
+  color: var(--Desaturated-blue);
+  font-size: 15px;
+}
+.plan a {
+  color: var(--Bright-blue);
+  font-weight: 900;
+  font-size: 13px;
+  margin-left: 25px;
+}
+.plan a:hover {
+  color: hsl(245deg 75% 52% / 60%);
+}
+.order {
+  margin-top: 25px;
+}
+.order button {
+  width: 90%;
+  padding: 16px;
+  background-color: var(--Bright-blue);
+  color: white;
+  font-weight: 700;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0px 11px 20px -12px hsl(252deg 52% 47%);
+}
+.order button:hover {
+  background-color: hsl(245deg 75% 52% / 60%);
+}
+.order a {
+  display: block;
+  margin: 30px 0;
+  color: var(--Desaturated-blue);
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 15px;
+}
+.order a:hover {
+  color: var(--Dark-blue);
+}
+.attribution {
+  position: absolute;
+  bottom: 30px;
+}
+/* DESIGN END */
